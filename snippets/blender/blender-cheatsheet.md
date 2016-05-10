@@ -10,7 +10,7 @@
 * `alt-m` merge vertices
 * `ctrl-r` loopcut
 * `e` extrude
-* `f` create face between selected vertices
+* `f` create face between selected vertices (or an edge between 2 vertices)
 
 ### View manipulations
 
