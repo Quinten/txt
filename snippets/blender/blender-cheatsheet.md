@@ -3,7 +3,7 @@
 ### Selections
 
 * `a` select or deselect everything
-* `d` delete selected
+* `x` delete selected
 
 ### Mesh manipulations
 
