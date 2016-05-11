@@ -22,3 +22,8 @@
 
 * `n` toggle properties panel
 * `t` toggle tools panel
+
+### Bones
+
+* `e` extrude bone
+* `ctrl-p` parent two bones (last selected is parent)
