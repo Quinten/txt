@@ -4,6 +4,9 @@
 
 * `a` select or deselect everything
 * `x` delete selected
+* `c` circle select tool
+* `b` border select tool
+* `ctrl-drag` lasso select tool
 
 ### Mesh manipulations
 
