@@ -7,10 +7,12 @@
 * `c` circle select tool
 * `b` border select tool
 * `ctrl-drag` lasso select tool
+* `shift-s` snap / cursor menu
 
 ### Object manipulations
 
 * `ctrl-j` join objects
+* `ctrl-a` apply transfroms (zero out)
 
 ### Mesh manipulations
 
@@ -18,6 +20,7 @@
 * `ctrl-r` loopcut
 * `e` extrude
 * `f` create face between selected vertices (or an edge between 2 vertices)
+* `ctrl-v` verices menu
 
 ### View manipulations
 
