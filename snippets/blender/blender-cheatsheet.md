@@ -8,6 +8,10 @@
 * `b` border select tool
 * `ctrl-drag` lasso select tool
 
+### Object manipulations
+
+* `ctrl-j` join objects
+
 ### Mesh manipulations
 
 * `alt-m` merge vertices
