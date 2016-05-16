@@ -21,7 +21,7 @@
 * `ctrl-r` loopcut
 * `e` extrude
 * `f` create face between selected vertices (or an edge between 2 vertices)
-* `ctrl-v` verices menu
+* `ctrl-v` vertices menu
 
 ### View manipulations
 
