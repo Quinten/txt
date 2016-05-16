@@ -37,3 +37,4 @@
 
 * `e` extrude bone
 * `ctrl-p` parent two bones (last selected is parent)
+* `shift-a` create a new bone
