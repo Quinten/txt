@@ -8,6 +8,7 @@
 * `b` border select tool
 * `ctrl-drag` lasso select tool
 * `shift-s` snap / cursor menu
+* `shift-d` duplicate
 
 ### Object manipulations
 
