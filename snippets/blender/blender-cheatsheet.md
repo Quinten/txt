@@ -39,3 +39,6 @@
 * `e` extrude bone
 * `ctrl-p` parent two bones (last selected is parent)
 * `shift-a` create a new bone
+* `alt-r` reset rotation of selected bones
+* `alt-g` reset location of selected bones
+* `alt-s` reset scaling of selected bones
