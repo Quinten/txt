@@ -10,6 +10,6 @@
 
     <?php $slug = \Magento\Framework\App\ObjectManager::getInstance()->get('Magento\Catalog\Model\Product\Url')->formatUrlKey($string); ?>
 
+### Get url of file inside the theme 'web' folder, like an image...
 
-
-
+    <?php echo $block->getViewFileUrl('Magento_Theme::images/logo.svg'); ?>
