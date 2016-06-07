@@ -43,3 +43,12 @@
 * `alt-r` reset rotation of selected bones
 * `alt-g` reset location of selected bones
 * `alt-s` reset scaling of selected bones
+
+### animation
+
+* `i` insert keyframe
+* `g + numbers` move selected keyframes
+* `ctrl-m` rename marker
+
+
+
