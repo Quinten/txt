@@ -19,3 +19,11 @@
 ### Get current category
 
     <?php $category = \Magento\Framework\App\ObjectManager::getInstance()->get('Magento\Framework\Registry')->registry('current_category'); ?>
+
+## Products
+
+### Get product image
+
+If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you can get the image of a product with
+
+    <?php $imageUrl = $block->getImage($_product, 'product_page_image_large')->getImageUrl(); ?>
