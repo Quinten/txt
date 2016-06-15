@@ -25,3 +25,15 @@
                 </arguments>
             </block>
     </referenceContainer>
+
+### Add an ampty div with a class and a html comment
+
+    <referenceContainer name="content">
+        <container name="my-placeholder" htmlTag="div" htmlClass="placeholder-css-class" before="-">
+            <block class="Magento\Framework\View\Element\Text" name="my-placeholder-comment">
+                <arguments>
+                    <argument name="text" xsi:type="string"><![CDATA[<!-- placeholder comment -->]]></argument>
+                </arguments>
+            </block>
+        </container>
+    </referenceContainer>
