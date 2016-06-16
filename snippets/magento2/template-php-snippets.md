@@ -28,6 +28,10 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
 
     <?php $imageUrl = $block->getImage($_product, 'product_page_image_large')->getImageUrl(); ?>
 
+(In case it doesn't inherit from that block, you can do:)
+
+    <?php $imageUrl = \Magento\Framework\App\ObjectManager::getInstance()->get('Magento\Catalog\Block\Product\AbstractProduct')->getImage($_product, 'product_page_image_large')->getImageUrl(); ?>
+
 ### Product add to wishlist link
 
 If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you can get the wishlistlink of a product with
