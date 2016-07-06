@@ -38,3 +38,18 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
 
     <a href="#" data-post='<?php echo $block->getAddToWishlistParams($_product); ?>'  class="action towishlist" data-action="add-to-wishlist" title="<?php echo __('Add to Wish List') ?>"><span><?php echo __('Add to Wish List') ?></span></a>
 
+## Users
+
+### Check if a user is logged in
+
+    <?php
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $customerSession = $objectManager->get('Magento\Customer\Model\Session');
+        if ($customerSession->isLoggedIn()):
+    ?>
+    <span><?=__('<a href="/customer/account/logout">Log out</a>')?></span>
+    <?php endif; ?>
+
+
+
+
