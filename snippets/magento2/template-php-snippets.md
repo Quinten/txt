@@ -50,6 +50,12 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
     <span><?=__('<a href="/customer/account/logout">Log out</a>')?></span>
     <?php endif; ?>
 
+## Blocks
 
+### Quickly get a static block
 
-
+    <?php if ($sb = $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('my-block')->toHtml()) { ?>
+        <?php echo $sb; ?>
+    <?php } else { ?>
+        <p>Alt content</p>
+    <?php } ?>
