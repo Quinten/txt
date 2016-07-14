@@ -59,3 +59,9 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
     <?php } else { ?>
         <p>Alt content</p>
     <?php } ?>
+
+### Quickly get some template that uses a product for something
+
+    <?php if ($pcib = $block->getLayout()->createBlock('Magento\Catalog\Block\Product\ListProduct')->setProduct($_product)->setTemplate('Magento_Catalog::product/view/parent-category-info.phtml')->toHtml()) { ?>
+        <?php echo $pcib; ?>
+    <?php } ?>
