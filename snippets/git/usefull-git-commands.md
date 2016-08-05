@@ -29,3 +29,16 @@
     git checkout -b upstream upstream/master
     git cherry-pick <SHA hash of commit>
     git push origin upstream
+
+## Stashing
+
+### An alternative to stashing, which let's you "stash" only a certain path
+
+Stash it:
+
+    git diff path/to/dir > stashed.diff
+    git checkout path/to/dir
+
+Pop it:
+
+    git apply stashed.diff
