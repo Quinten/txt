@@ -57,4 +57,9 @@ Pop it:
 
     git checkout -b version2 v2.0.0
 
+## gh-pages
+
+### Deploy a specific subfolder to gh-pages (in this case the pub/ folder)
+
+    git subtree push --prefix pub/ origin gh-pages
 
