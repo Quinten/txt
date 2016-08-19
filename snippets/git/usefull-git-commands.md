@@ -42,3 +42,19 @@ Stash it:
 Pop it:
 
     git apply stashed.diff
+
+## Tagging
+
+### List tags
+
+    git tag
+
+### Create a tag
+
+    git tag -a v0.0.1 -m "My first release"
+
+### Create a new branch that looks like the tag
+
+    git checkout -b version2 v2.0.0
+
+
