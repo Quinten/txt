@@ -10,4 +10,4 @@
 
 ### insert a template into a block or page
 
-    <div>{{block class="Magento\\Framework\\View\\Element\\Template" name="test_content" template="Baldwin_Content::testpage.phtml"}}</div>
+    <div>{{block class="Magento\\Framework\\View\\Element\\Template" name="test_content" template="Vendor_Module::testpage.phtml"}}</div>
