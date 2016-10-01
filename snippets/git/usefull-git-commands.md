@@ -20,6 +20,10 @@
 
     git submodule update --init --recursive
 
+### Updating to latest tips of remote branches of submodules
+
+    git submodule update --recursive --remote
+
 ## Pull requests
 
 ### Prepare a branch to propose a pull request with
