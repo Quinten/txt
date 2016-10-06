@@ -37,3 +37,17 @@
             </block>
         </container>
     </referenceContainer>
+
+### Show an attribute (like 'brand') underneath the page title
+
+    <referenceContainer name="columns.top">
+        <block class="Magento\Catalog\Block\Product\View\Description" name="product.info.brand" template="product/view/attribute.phtml" after="page.main.title">
+            <arguments>
+                <argument name="at_call" xsi:type="string">getBrand</argument>
+                <argument name="at_code" xsi:type="string">brand</argument>
+                <argument name="css_class" xsi:type="string">brand</argument>
+                <argument name="at_label" xsi:type="string">none</argument>
+                <argument name="at_type" xsi:type="string">text</argument><!-- needed for things like dropdowns -->
+            </arguments>
+        </block>
+    </referenceContainer>
