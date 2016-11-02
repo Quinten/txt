@@ -26,6 +26,12 @@
             </block>
     </referenceContainer>
 
+### Add a template with some php code in it
+
+    <referenceContainer name="some-parent-container-name">
+        <block class="Magento\Framework\View\Element\Template" name="a-fancy-name-for-my-block" template="Magento_Theme::html/some-template.phtml" />
+    </referenceContainer>
+
 ### Add an ampty div with a class and a html comment
 
     <referenceContainer name="content">
