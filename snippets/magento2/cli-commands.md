@@ -21,5 +21,10 @@ Change the urls
     ./vendor/bin/n98-magerun2 config:set "web/unsecure/base_url" "http://domain.dev"
     ./vendor/bin/n98-magerun2 config:set "web/secure/base_url" "http://domain.dev"
 
+Removing the https redirect
+
+    ./vendor/bin/n98-magerun2 config:set "web/secure/use_in_adminhtml" 0
+    ./vendor/bin/n98-magerun2 config:set "web/secure/use_in_frontend" 0
+
 
 
