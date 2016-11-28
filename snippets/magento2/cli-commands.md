@@ -26,5 +26,12 @@ Removing the https redirect
     ./vendor/bin/n98-magerun2 config:set "web/secure/use_in_adminhtml" 0
     ./vendor/bin/n98-magerun2 config:set "web/secure/use_in_frontend" 0
 
+Remove minification
 
+    ./vendor/bin/n98-magerun2 config:set "dev/template/minify_html" 0
+    ./vendor/bin/n98-magerun2 config:set "dev/js/minify_files" 0
+    ./vendor/bin/n98-magerun2 config:set "dev/css/minify_files" 0
 
+Rempove static signing
+
+    ./vendor/bin/n98-magerun2 config:set "dev/static/sign" 0
