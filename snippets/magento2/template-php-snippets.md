@@ -14,6 +14,10 @@
 
     <?php echo $block->getViewFileUrl('Magento_Theme::images/logo.svg'); ?>
 
+### Get store url for a general path
+
+    <a href="<?php echo $block->getUrl('customer/account'); ?>"><?=__('Account')?></a>
+
 ## Category's
 
 ### Get current category
