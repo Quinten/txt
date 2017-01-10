@@ -1,5 +1,7 @@
 #css less snippets
 
+Acces documentation on any Magento 2 installation https://pedicurepecceu.be/pub/static/frontend/Magento/blank/en_US/css/docs/index.html
+
 ### icon font parameters
 
     .lib-icon-font(
