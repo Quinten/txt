@@ -1,5 +1,9 @@
 # cms html snippets
 
+### insert an image from the wysiwyg folder
+
+    <img src="{{media url="wysiwyg/banners/intro.jpg"}}" alt="" />
+
 ### insert an image from the themes folder
 
     <img src="{{view url="images/example.svg"}}" alt="" />
