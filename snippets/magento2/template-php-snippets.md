@@ -42,6 +42,12 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
 
     <a href="#" data-post='<?php echo $block->getAddToWishlistParams($_product); ?>'  class="action towishlist" data-action="add-to-wishlist" title="<?php echo __('Add to Wish List') ?>"><span><?php echo __('Add to Wish List') ?></span></a>
 
+### Options of a product attribute
+
+    $eavConfig = \Magento\Framework\App\ObjectManager::getInstance()->get('Magento\Eav\Model\Config');
+    $attribute = $eavConfig->getAttribute('catalog_product', 'attribute_code_here');
+    $options = $attribute->getSource()->getAllOptions();
+
 ## Users
 
 ### Check if a user is logged in
