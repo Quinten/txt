@@ -52,6 +52,10 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
 
     $productOptionTextValue = $_product->getAttributeText('attribute_code_here');
 
+### Get raw value of a product attribute
+
+    $productAttributeRawValue = $_product->getData('attribute_code_here');
+
 ## Users
 
 ### Check if a user is logged in
