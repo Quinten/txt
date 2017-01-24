@@ -48,6 +48,10 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
     $attribute = $eavConfig->getAttribute('catalog_product', 'attribute_code_here');
     $options = $attribute->getSource()->getAllOptions();
 
+### Selected option of a product as text
+
+    $productOptionTextValue = $_product->getAttributeText('attribute_code_here');
+
 ## Users
 
 ### Check if a user is logged in
