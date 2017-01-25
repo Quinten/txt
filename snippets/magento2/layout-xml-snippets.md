@@ -57,3 +57,26 @@
             </arguments>
         </block>
     </referenceContainer>
+
+### Breadcrumbs
+
+    <referenceBlock name="breadcrumbs">
+        <action method="addCrumb">
+            <argument name="crumbName" xsi:type="string">Home</argument>
+            <argument name="crumbInfo" xsi:type="array">
+                <item name="title" xsi:type="string">Home</item>
+                <item name="label" xsi:type="string">Home</item>
+                <item name="link" xsi:type="string">/</item>
+            </argument>
+        </action>
+        <action method="addCrumb">
+            <argument name="crumbName" xsi:type="string">Contact Us</argument>
+            <argument name="crumbInfo" xsi:type="array">
+                <item name="title" xsi:type="string">Contact Us</item>
+                <item name="label" xsi:type="string">Contact Us</item>
+            </argument>
+        </action>
+    </referenceBlock>
+
+
+
