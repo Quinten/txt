@@ -55,6 +55,10 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
 ### Get raw value of a product attribute
 
     $productAttributeRawValue = $_product->getData('attribute_code_here');
+    
+### Get a formatted price
+
+    $this->helper('Magento\Framework\Pricing\Helper\Data')->currency($_product->getPriceInfo()->getPrice('final_price')->getValue(),true,false);
 
 ## Users
 
