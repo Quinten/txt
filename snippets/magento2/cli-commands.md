@@ -38,4 +38,4 @@ Remove static signing
 
 ### Alternative method to change the base urls
 
-    bin/magento setup:store-config:set --base-url "http://www.gotron.dev"
+    bin/magento setup:store-config:set --base-url "http://domain.dev"
