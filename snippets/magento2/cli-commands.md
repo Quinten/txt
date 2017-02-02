@@ -32,6 +32,6 @@ Remove minification
     ./vendor/bin/n98-magerun2 config:set "dev/js/minify_files" 0
     ./vendor/bin/n98-magerun2 config:set "dev/css/minify_files" 0
 
-Rempove static signing
+Remove static signing
 
     ./vendor/bin/n98-magerun2 config:set "dev/static/sign" 0
