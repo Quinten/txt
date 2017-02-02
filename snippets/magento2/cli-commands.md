@@ -29,6 +29,8 @@ Removing the https redirect
 Remove merging
 
     ./vendor/bin/n98-magerun2 config:set "dev/css/merge_css_files" 0
+    ./vendor/bin/n98-magerun2 config:set "dev/js/merge_files" 0
+    ./vendor/bin/n98-magerun2 config:set "dev/js/enable_js_bundling" 0
 
 Remove minification
 
