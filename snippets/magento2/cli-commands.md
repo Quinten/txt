@@ -25,6 +25,10 @@ Removing the https redirect
 
     ./vendor/bin/n98-magerun2 config:set "web/secure/use_in_adminhtml" 0
     ./vendor/bin/n98-magerun2 config:set "web/secure/use_in_frontend" 0
+    
+Remove merging
+
+    ./vendor/bin/n98-magerun2 config:set "dev/css/merge_css_files" 0
 
 Remove minification
 
