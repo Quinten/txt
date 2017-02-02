@@ -35,3 +35,7 @@ Remove minification
 Remove static signing
 
     ./vendor/bin/n98-magerun2 config:set "dev/static/sign" 0
+
+### Alternative method to change the base urls
+
+    bin/magento setup:store-config:set --base-url "http://www.gotron.dev"
