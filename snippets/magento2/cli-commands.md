@@ -8,7 +8,7 @@ Interactively get the composer package
 
 Then type:
 
-  n98/magerun2
+    n98/magerun2
   
 And hit enter a couple of times.
 
