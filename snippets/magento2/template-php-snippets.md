@@ -18,6 +18,16 @@
 
     <a href="<?php echo $block->getUrl('customer/account'); ?>"><?=__('Account')?></a>
 
+## Pages
+
+### Get meta data
+
+    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $_page_config = $objectManager->get('Magento\Framework\View\Page\Config');
+    $_meta_title = strip_tags($_page_config->getTitle()->getShort());
+    $_meta_description = strip_tags($_page_config->getDescription());
+    $_meta_keywords = strip_tags($_page_config->getKeywords());
+
 ## Category's
 
 ### Get current category
