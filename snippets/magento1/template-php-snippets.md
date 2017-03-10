@@ -19,4 +19,4 @@
 
 ### Load a static block
 
-    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tadaaz_text')->toHtml(); ?>
+    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tadaaz_text')->toHtml(); ?>
