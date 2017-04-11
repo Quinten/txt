@@ -1,4 +1,4 @@
-#css less snippets
+# css less snippets
 
 Acces documentation on any Magento 2 installation https://pedicurepecceu.be/pub/static/frontend/Magento/blank/en_US/css/docs/index.html
 
@@ -19,6 +19,15 @@ Acces documentation on any Magento 2 installation https://pedicurepecceu.be/pub/
         @_icon-font-display: @icon-font__display
     );
 
+### use an svg inline
+
+    @pattern-svg: "<svg xmlns='http://www.w3.org/2000/svg' width='2' height='1'><rect fill='@{color-deep-blue}' x='0' y='0' width='1' height='1' /><rect fill='@{color-lite-blue}' x='1' y='0' width='1' height='1' /></svg>";
+    @pattern-svg-escaped: escape(@pattern-svg);
+    @pattern: "data:image/svg+xml;utf8,@{pattern-svg-escaped}";
+    
+    .some-element {
+        background: url(@pattern) repeat center center;    
+    }
 
 
 
