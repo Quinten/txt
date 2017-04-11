@@ -21,9 +21,9 @@ Acces documentation on any Magento 2 installation https://pedicurepecceu.be/pub/
 
 ### use an svg inline
 
-    @pattern-svg: "<svg xmlns='http://www.w3.org/2000/svg' width='2' height='1'><rect fill='@{color-deep-blue}' x='0' y='0' width='1' height='1' /><rect fill='@{color-lite-blue}' x='1' y='0' width='1' height='1' /></svg>";
+    @pattern-svg: "<svg xmlns='http://www.w3.org/2000/svg' width='2' height='1' viewBox='0 0 2 1'><rect fill='@{color-deep-blue}' x='0' y='0' width='1' height='1' /><rect fill='@{color-lite-blue}' x='1' y='0' width='1' height='1' /></svg>";
     @pattern-svg-escaped: escape(@pattern-svg);
-    @pattern: "data:image/svg+xml;utf8,@{pattern-svg-escaped}";
+    @pattern: "data:image/svg+xml,@{pattern-svg-escaped}";
     
     .some-element {
         background: url(@pattern) repeat center center;    
