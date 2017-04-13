@@ -16,6 +16,14 @@
 
     <move element="name.block.to.move" destination="target.parent.name" after="-" />
 
+### Simple div container
+
+    <referenceContainer name="my.parent.container">
+        <container name="my.div.container" htmlTag="div" htmlClass="some-nice-css-class" after="-">
+        </container>
+    </referenceBlock>
+
+
 ### Add a static block
 
     <referenceContainer name="my-static-block-parent-container-name">
