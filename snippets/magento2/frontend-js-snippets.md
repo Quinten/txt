@@ -1,3 +1,13 @@
+### Simple jquery document ready
+
+    <script>
+        require(['jquery','domReady!'], function ($) {
+            $('.o-toggle-link').click(function (e) {
+                $('.o-toggle-element').toggleClass('is-active');
+            });
+        });
+    </script>
+
 ### Add a string for js to translate in a phtml file
 
     <?php
