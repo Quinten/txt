@@ -21,7 +21,7 @@
     <referenceContainer name="my.parent.container">
         <container name="my.div.container" htmlTag="div" htmlClass="some-nice-css-class" after="-">
         </container>
-    </referenceBlock>
+    </referenceContainer>
 
 
 ### Add a static block
