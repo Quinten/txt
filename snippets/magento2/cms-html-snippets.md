@@ -1,5 +1,9 @@
 # cms html snippets
 
+### insert a link with a url
+
+    <a href="{{store url="about-us"}}">About us</a>
+
 ### insert an image from the wysiwyg folder
 
     <img src="{{media url="wysiwyg/banners/intro.jpg"}}" alt="" />
