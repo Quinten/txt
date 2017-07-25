@@ -6,3 +6,10 @@
         // dom is ready
         // do stuff with $
     });
+
+### Scroll detection
+
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+    });
