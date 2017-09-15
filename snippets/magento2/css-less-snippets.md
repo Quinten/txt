@@ -29,5 +29,24 @@ Acces documentation on any Magento 2 installation https://pedicurepecceu.be/pub/
         background: url(@pattern) repeat center center;    
     }
 
+### Style links
+
+In this case make a hidden link
+
+    .lib-link(
+        @_link-color: @primary__color,
+        @_link-text-decoration: none,
+        @_link-color-visited: @primary__color,
+        @_link-text-decoration-visited: none,
+        @_link-color-hover: @primary__color,
+        @_link-text-decoration-hover: none,
+        @_link-color-active: @primary__color,
+        @_link-text-decoration-active: none,
+    );
+
+
+
+
+
 
 
