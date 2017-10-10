@@ -36,6 +36,10 @@
 
 ## Products
 
+### Get more complete product
+
+    $product = \Magento\Framework\App\ObjectManager::getInstance()->get('\Magento\Catalog\Model\ProductRepository')->getById($item->getProduct()->getId());
+
 ### Get product image
 
 If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you can get the image of a product with
