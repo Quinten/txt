@@ -44,7 +44,9 @@ In this case make a hidden link
         @_link-text-decoration-active: none,
     );
 
+### Unhide something that is hidden with a mixin
 
+    .lib-visually-hidden-reset();
 
 
 
