@@ -109,3 +109,14 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
     <?php if ($pcib = $block->getLayout()->createBlock('Magento\Catalog\Block\Product\ListProduct')->setProduct($_product)->setTemplate('Magento_Catalog::product/view/parent-category-info.phtml')->toHtml()) { ?>
         <?php echo $pcib; ?>
     <?php } ?>
+    
+### Render a block with a different template on some other spot
+
+```
+$leftnav = $block->getLayout()->getBlock('catalog.leftnav');
+if (get_class($leftnav) == 'Smile\ElasticsuiteCatalog\Block\Navigation') {
+    $leftnavTemplate = $leftnav->getTemplate();
+    echo $leftnav->setTemplate('Smile_ElasticsuiteCatalog::layer/stock.phtml')->toHtml();
+    $leftnav->setTemplate($leftnavTemplate);
+}
+```
