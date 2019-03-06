@@ -23,3 +23,7 @@
 ### insert a template with variables
 
     <div>{{block class="Magento\\Catalog\\Block\\Navigation" name="popular-categories-home" template="Magento_Catalog::navigation/subcat-thumbs.phtml" selected_category_ids="3912,3914,3915,3916,3917,3918,3919,3920"}}</div>
+
+### insert a custom var
+
+    {{customvar code="tools-icon"}}
