@@ -1,3 +1,11 @@
+### List all component in the page (in console)
+
+    var currentUiComponents = {};
+    requirejs('uiRegistry').filter(function(item){
+        currentUiComponents[item.name] = item;
+    });
+    console.log(currentUiComponents);
+
 ### Simple jquery document ready
 
     <script>
