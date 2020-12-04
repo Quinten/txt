@@ -12,11 +12,11 @@
 
 ### Get url of file inside the theme 'web' folder, like an image...
 
-    <?php echo $block->getViewFileUrl('Magento_Theme::images/logo.svg'); ?>
+    <?= $block->getViewFileUrl('Magento_Theme::images/logo.svg') ?>
 
 ### Get store url for a general path
 
-    <a href="<?php echo $block->getUrl('customer/account'); ?>"><?=__('Account')?></a>
+    <a href="<?= $block->getUrl('customer/account') ?>"><?= __('Account') ?></a>
 
 ## Pages
 
@@ -54,7 +54,7 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
 
 If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you can get the wishlistlink of a product with
 
-    <a href="#" data-post='<?php echo $block->getAddToWishlistParams($_product); ?>'  class="action towishlist" data-action="add-to-wishlist" title="<?php echo __('Add to Wish List') ?>"><span><?php echo __('Add to Wish List') ?></span></a>
+    <a href="#" data-post='<?= $block->getAddToWishlistParams($_product) ?>'  class="action towishlist" data-action="add-to-wishlist" title="<?= __('Add to Wish List') ?>"><span><?= __('Add to Wish List') ?></span></a>
 
 ### Options of a product attribute
 
@@ -72,7 +72,7 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
     
 ### Get a formatted price
 
-    $this->helper('Magento\Framework\Pricing\Helper\Data')->currency($_product->getPriceInfo()->getPrice('final_price')->getValue(),true,false);
+    $this->helper('Magento\Framework\Pricing\Helper\Data')->currency($_product->getPriceInfo()->getPrice('final_price')->getValue(), true, false);
 
 ## Users
 
@@ -83,7 +83,7 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
         $customerSession = $objectManager->get('Magento\Customer\Model\Session');
         if ($customerSession->isLoggedIn()):
     ?>
-    <span><?=__('<a href="/customer/account/logout">Log out</a>')?></span>
+    <span><?= __('<a href="/customer/account/logout">Log out</a>') ?></span>
     <?php endif; ?>
 
 ## Blocks
@@ -91,7 +91,7 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
 ### Quickly get a static block
 
     <?php if ($sb = $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('my-block')->toHtml()) { ?>
-        <?php echo $sb; ?>
+        <?= $sb ?>
     <?php } else { ?>
         <p>Alt content</p>
     <?php } ?>
@@ -99,7 +99,7 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
 ### Same but with a template
 
     <?php if ($tb = $block->getLayout()->createBlock('Magento\Framework\View\Element\Template')->setTemplate('Magento_Theme::html/social.phtml')->toHtml()) { ?>
-        <?php echo $tb; ?>
+        <?= $tb ?>
     <?php } else { ?>
         <p>Alt content</p>
     <?php } ?>
@@ -107,7 +107,7 @@ If your block inherits from `Magento\Catalog\Block\Product\AbstractProduct` you 
 ### Quickly get some template that uses a product for something
 
     <?php if ($pcib = $block->getLayout()->createBlock('Magento\Catalog\Block\Product\ListProduct')->setProduct($_product)->setTemplate('Magento_Catalog::product/view/parent-category-info.phtml')->toHtml()) { ?>
-        <?php echo $pcib; ?>
+        <?= $pcib ?>
     <?php } ?>
     
 ### Render a block with a different template on some other spot
